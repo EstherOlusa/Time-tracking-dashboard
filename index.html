@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card-item standalone card-1">
+        <div class="standalone-content">
+          <img src="images/image-jeremy.png" alt="" />
+          <div class="paragraph">
+            <p class="p-1">Report for</p>
+            <p class="p-2">Jeremy Robson</p>
+          </div>
+        </div>
+
+        <div class="standalone-data">
+          <ul class="filters">
+            <li class="filter-item active">Daily</li>
+            <li class="filter-item">Weekly</li>
+            <li class="filter-item">Monthly</li>
+          </ul>
+        </div>
+
+        <!-- <div class="card-item-content"></div>
+        <div class="season">
+          <p>Daily</p>
+          <p>Weekly</p>
+          <p>Monthly</p>
+        </div> -->
+      </div>
+
+      <div class="card-item card-base card-2">
+        <div class="card-item-content">
+          <div class="header">
+            <p>Work</p>
+
+            <span class="span-img"
+              ><img src="images/icon-ellipsis.svg" alt=""
+            /></span>
+          </div>
+
+          <div class="times">
+            <p class="time">5hrs</p>
+            <!-- daily -->
+            <p class="previous-time">Previous - 7hrs</p>
+          </div>
+          <!-- daily -->
+          <!-- 32hrs -->
+          <!-- weekly -->
+          <!-- Previous - 36hrs -->
+          <!-- weekly -->
+          <!-- 103hrs -->
+          <!-- monthly -->
+          <!-- Previous - 128hrs -->
+          <!-- monthly -->
+        </div>
+      </div>
+      <div class="card-item card-base card-3">
+        <div class="card-item-content">
+          <div class="header">
+            <p>Play</p>
+            <span class="span-img"
+              ><img src="images/icon-ellipsis.svg" alt=""
+            /></span>
+          </div>
+          <div class="times">
+            <p class="time">1hr</p>
+            <!-- daily -->
+            <p class="previous-time">Previous - 2hrs</p>
+          </div>
+          <!-- daily -->
+          <!-- 10hrs -->
+          <!-- weekly -->
+          <!-- Previous - 8hrs -->
+          <!-- weekly -->
+          <!-- 23hrs -->
+          <!-- monthly -->
+          <!-- Previous - 29hrs -->
+          <!-- monthly -->
+        </div>
+      </div>
+      <div class="card-item card-base card-4">
+        <div class="card-item-content">
+          <div class="header">
+            <p>Study</p>
+
+            <span class="span-img"
+              ><img src="images/icon-ellipsis.svg" alt=""
+            /></span>
+          </div>
+          <div class="times">
+            <p class="time">0hrs</p>
+            <!-- daily -->
+            <p class="previous-time">Previous - 1hrs</p>
+          </div>
+          <!-- daily -->
+          <!-- 4hrs -->
+          <!-- weekly -->
+          <!-- Previous - 7hrs -->
+          <!-- weekly -->
+          <!-- 13hrs -->
+          <!-- monthly -->
+          <!-- Previous - 19hrs -->
+          <!-- monthly -->
+        </div>
+      </div>
+      <div class="card-item card-base card-5">
+        <div class="card-item-content">
+          <div class="header">
+            <p>Exercise</p>
+            <span class="span-img"
+              ><img src="images/icon-ellipsis.svg" alt=""
+            /></span>
+          </div>
+          <div class="times">
+            <p class="time">1hr</p>
+            <!-- daily -->
+
+            <p class="previous-time">Previous - 1hr</p>
+          </div>
+          <!-- daily -->
+          <!-- 4hrs -->
+          <!-- weekly -->
+          <!-- Previous - 5hrs -->
+          <!-- weekly -->
+          <!-- 11hrs -->
+          <!-- monthly -->
+          <!-- Previous - 18hrs -->
+        </div>
+      </div>
+      <!-- monthly -->
+      <div class="card-item card-base card-6">
+        <div class="card-item-content">
+          <div class="header">
+            <p>Social</p>
+
+            <span class="span-img"
+              ><img src="images/icon-ellipsis.svg" alt=""
+            /></span>
+          </div>
+          <div class="times">
+            <p class="time">1hr</p>
+            <!-- daily -->
+            <p class="previous-time">Previous - 3hrs</p>
+          </div>
+          <!-- daily -->
+          <!-- 5hrs -->
+          <!-- weekly -->
+          <!-- Previous - 10hrs -->
+          <!-- weekly -->
+          <!-- 21hrs -->
+          <!-- monthly -->
+          <!-- Previous - 23hrs -->
+          <!-- monthly -->
+        </div>
+      </div>
+      <div class="card-item card-base card-7">
+        <div class="card-item-content">
+          <div class="header">
+            <p>Self Care</p>
+
+            <span class="span-img"
+              ><img src="images/icon-ellipsis.svg" alt=""
+            /></span>
+          </div>
+          <div class="times">
+            <p class="time">0hrs</p>
+            <!-- daily -->
+            <p class="previous-time">Previous - 1hr</p>
+          </div>
+          <!-- daily -->
+          <!-- 2hrs -->
+          <!-- weekly -->
+          <!-- Previous - 2hrs -->
+          <!-- weekly -->
+          <!-- 7hrs -->
+          <!-- monthly -->
+          <!-- Previous - 11hrs -->
+          <!-- monthly -->
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+
+    <script src="./app.js"></script>
+  </body>
+</html>
