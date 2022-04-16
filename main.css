@@ -71,6 +71,7 @@ body {
 .filter-item {
   margin-bottom: 20px;
   cursor: pointer;
+  transition: all 0.2s;
 }
 .filter-item.active {
   color: #fff;
@@ -84,6 +85,7 @@ body {
   padding: 30px 20px;
   border-radius: 8px;
   height: 100%;
+  transition: all 0.2s;
 }
 
 .card-item-content .header {
@@ -94,9 +96,12 @@ body {
 
 .card-item-content .header .span-img {
   display: inline-flex;
+  opacity: 0.5;
+  transition: all 0.2s;
 }
-.card-item-content .header .span-img img:hover {
-  color: #fff;
+
+.card-item-content .header .span-img:hover {
+  opacity: 1;
 }
 .card-item-content:hover {
   background-color: hsl(236, 41%, 34%);
@@ -108,27 +113,27 @@ body {
   background-size: 55px;
 }
 
-.card-2 {
+.card-work {
   background-color: #ff8c66;
   background-image: url(images/icon-work.svg);
 }
-.card-3 {
+.card-play {
   background-image: url(images/icon-play.svg);
   background-color: hsl(195, 74%, 62%);
 }
-.card-4 {
+.card-study {
   background-image: url(images/icon-study.svg);
   background-color: hsl(348, 100%, 68%);
 }
-.card-5 {
+.card-exercise {
   background-image: url(images/icon-exercise.svg);
   background-color: hsl(145, 58%, 55%);
 }
-.card-6 {
+.card-social {
   background-image: url(images/icon-social.svg);
   background-color: hsl(264, 64%, 52%);
 }
-.card-7 {
+.card-selfcare {
   background-image: url(images/icon-self-care.svg);
   background-color: hsl(43, 84%, 65%);
 }
@@ -153,7 +158,14 @@ body {
   .card-container {
     max-width: 700px;
   } */
-
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 @media (max-width: 450px) {
   .card-container {
     display: flex;
